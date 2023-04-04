@@ -115,10 +115,6 @@
         z-index: 100;
     }
     .header__link {
-        margin: 0;
-        padding: 0;
         @include font (700, 22px, 27px);
-        color: #cde1f0;
-        cursor: pointer;
     }
 }
