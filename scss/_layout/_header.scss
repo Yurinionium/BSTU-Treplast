@@ -1,0 +1,124 @@
+
+.header {
+    width: 100%;
+    background-color: #244a67;
+    opacity: 1;
+    margin: 0 auto;
+    padding: 28px 0 17px 0;
+}
+.header__link-item {
+    text-decoration: none;
+    color: #cde1f0;
+    transition: 1s all ease-in-out;
+
+    &:hover {
+        text-decoration: none;
+        color: #ffd3a0;
+    }
+}
+.nav {
+    display: flex;
+}
+
+.header__width {
+    padding: 0 11px;
+    @include flex (space-between, center, nowrap);
+}
+
+.header__logo {
+    width: 70px;
+    height: 64px;
+}
+
+.header__links {
+    @include flex (baseline, baseline, nowrap);
+    margin: 3px 3px 0 0;
+    gap: 0 20px;
+}
+
+.header__link {
+    @include font (700, 22px, 27px);
+    color: #cde1f0;
+    cursor: pointer;
+
+    &:hover {
+        color: #ffd3a0;
+    }
+}
+@media (max-width: 900px) {
+    .header {
+        padding: 28px 0;
+    }
+
+    .header__logo {
+        width: 58px;
+        height: 53px;
+    }
+
+    .header__link {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .header__links {
+        margin: 6px 0 0 0;
+        gap: 0 13px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header {
+        padding: 17px 0 15px 0;
+    }
+    .header__width {
+        padding: 0 11px;
+    }
+    .header__logo {
+        width: 42px;
+        height: 40px;
+        z-index: 52;
+    }
+    .header__links {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        margin: 0;
+        gap: 0 20px;
+        padding: 0;
+        position: relative;
+        z-index: 55;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        overflow: auto;
+        padding: 64px 31px;
+        background-color: #42627b;
+        animation: burgerAnimation 0.4s;
+    }
+    .active__nav {
+        display: flex !important;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        row-gap: 30px;
+        position: relative;
+        z-index: 100;
+    }
+    .header__link {
+        margin: 0;
+        padding: 0;
+        @include font (700, 22px, 27px);
+        color: #cde1f0;
+        cursor: pointer;
+    }
+}
