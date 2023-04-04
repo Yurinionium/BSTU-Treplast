@@ -1,5 +1,5 @@
 .page {
-    background-color: #788da0;
+    background-color: $fon-color;
     font-family: "Inter", Arial, sans-serif;
     text-rendering: optimizeLegibility;
     margin: 0 auto;
@@ -18,7 +18,7 @@
     margin: 0 auto;
     text-align: center;
     @include font (700, 48px, 58px);
-    color: #cde1f0;
+    color: $title-color;
 }
 
 .page__subtitle {
@@ -26,7 +26,7 @@
     text-align: center;
     margin: 0 auto;
     @include font (600, 20px, 24px);
-    color: #cde1f0;
+    color: $title-color;
 }
 @media (max-width: 900px) {
 .page__title {
@@ -51,13 +51,13 @@
 .style {
     font-style: normal;
     @include font (500, 28px, 34px);
-    color: #000000;
+    color: $text-color;
 }
 
 @media (max-width: 900px) {
     .style {
         font-style: normal;
         @include font (500, 28px, 34px);
-        color: #000000;
+        color: $text-color;
     }
 }

@@ -13,7 +13,7 @@
     width: 310px;
     height: 360px;
     background-color: #ffffff;
-    color: #000000;
+    color: $text-color;
     border-radius: 30px;
 }
 
@@ -28,6 +28,7 @@
     @include font (700, 16px, 19px);
     @include flex (space-between, baseline, nowrap); 
     width: 272px;
+    color: $text-color;
     margin: 23px auto 0 auto;
 }
 
@@ -35,6 +36,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: $text-color;
     max-width: 200px;
 }
 @media (max-width: 900px) {

@@ -10,6 +10,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: $text-color;
 }
 
 .container__price {
@@ -52,7 +53,7 @@
     text-align: right;
     font-family: "Inter";
     font-style: normal;
-    @include font (500, 28px, 34px);
+    @include font (400, 28px, 34px);
     padding: 27px 36px 20px 0;
 }
 
@@ -67,13 +68,13 @@
     .container__title {
         padding: 0 0 0 4px;
         width: 271px;
-        @include font (500, 26px, 29px);
+        @include font (400, 26px, 29px);
     }
 
     .container__price {
         padding: 0px 0px 0px 8px;
         width: 88px;
-        @include font (500, 26px, 29px);
+        @include font (400, 26px, 29px);
     }
 
     .container__inputs {
@@ -83,13 +84,13 @@
 
     .container__total-price {
         width: 114px;
-        font-weight: 500;
-        @include font (500, 26px, 29px);
+        font-weight: 400;
+        @include font (400, 26px, 29px);
         padding: 0 0 0 4px;
     }
 
     .cost {
-        @include font (500, 26px, 29px);
+        @include font (400, 26px, 29px);
     }
 
     .total-cost {
