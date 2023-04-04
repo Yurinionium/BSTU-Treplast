@@ -1051,6 +1051,7 @@
   padding: 0 22px;
   margin: 34px auto 0 auto;
   gap: 21px 25px;
+  transition: 5s all ease-in;
 }
 
 .portfolio__img {
@@ -1227,7 +1228,7 @@
 
 .feedback__img {
   position: absolute;
-  background-image: url(../images/fon3.jpg);
+  background-image: url(../extends/jpg/fon3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1301,7 +1302,7 @@
     min-height: 468px;
   }
   .feedback__img {
-    background-image: url(../images/fonforcvazi.jpg);
+    background-image: url(../extends/jpg/fonforcvazi.jpg);
   }
   .feedback__container {
     max-width: 363px;
@@ -1321,7 +1322,7 @@
     min-height: 400px;
   }
   .feedback__img {
-    background-image: url(../images/feedbackfon.jpg);
+    background-image: url(../extends/jpg/feedbackfon.jpg);
   }
   .feedback__container {
     max-width: 310px;
