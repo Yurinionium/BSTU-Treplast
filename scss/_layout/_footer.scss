@@ -53,9 +53,10 @@
     height: 32px;
     cursor: pointer;
     color: #ffd3a0;
-
+    transition: 1s all ease-out;
     &:hover {
         color: #ffd3a0;
+        filter: invert(0.6) sepia(1);
     }
 }
 

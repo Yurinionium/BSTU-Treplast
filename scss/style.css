@@ -803,7 +803,7 @@
 
 .cover__img {
   position: absolute;
-  background-image: url(../images/fon.jpg);
+  background-image: url(../extends/jpg/fon.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -841,7 +841,7 @@
     min-height: 506px;
   }
   .cover__img {
-    background-image: url(../images/fonforcover768.jpg);
+    background-image: url(../extends/jpg/fonforcover768.jpg);
   }
   .cover__title {
     font-family: "Inter";
@@ -867,7 +867,7 @@
     min-height: 213px;
   }
   .cover__img {
-    background-image: url(../images/opa.svg);
+    background-image: url(../extends/svg/opa.svg);
   }
   .cover__title {
     font-family: "Inter";
@@ -959,9 +959,11 @@
   height: 32px;
   cursor: pointer;
   color: #ffd3a0;
+  transition: 1s all ease-out;
 }
 .footer__img:hover {
   color: #ffd3a0;
+  filter: invert(0.6) sepia(1);
 }
 
 .footer__subtitle {
@@ -1288,6 +1290,10 @@
 .feedback__field:focus {
   border-color: rgba(66, 98, 123, 0.8);
   outline: none;
+}
+
+.feedback__button {
+  margin: 0;
 }
 
 @media (max-width: 900px) {
