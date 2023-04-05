@@ -923,8 +923,7 @@
 .calc {
     margin: 15px auto 30px auto;
 }
-.page__container {
-}
+
 .calc__container {
     max-width: 1000px;
     background-color: #F5F5F5;
@@ -1002,9 +1001,7 @@
     border-radius: 5px;
     margin: 0;
 }
-.container__button-plus {
 
-}
 
 .container__input {
     background: rgba(174, 187, 198, 0.6);
@@ -1014,17 +1011,14 @@
     width: 66px;
     margin: 0;
 }
-.container__button-minuse {
 
-}
 .container__total-price {
     width: 181px;
     text-align: center;
     padding: 0px 5px 2px 0px;
 }
 
-.header__link {
-}
+
 .header__link-item {
     text-decoration: none;
     color: #CDE1F0;
