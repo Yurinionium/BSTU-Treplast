@@ -1,11 +1,11 @@
-const burger = document.querySelector('.burger');
-const navBar = document.querySelector('.nav');
+// const burger = document.querySelector('.burger');
+// const navBar = document.querySelector('.nav');
 
-burger.addEventListener('click', function(e) {
-    this.classList.toggle('active');
-    navBar.classList.toggle('active__nav');
-    console.log("Burger is opened");
-})
+// burger.addEventListener('click', function(e) {
+//     this.classList.toggle('active');
+//     navBar.classList.toggle('active__nav');
+//     console.log("Burger is opened");
+// })
 
 
 //calc
