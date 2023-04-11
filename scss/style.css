@@ -7,14 +7,6 @@
   text-decoration: none;
 }
 
-@keyframes burgerAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .page {
   background-color: #788da0;
   font-family: "Inter", Arial, sans-serif;
@@ -228,7 +220,13 @@
     overflow: auto;
     padding: 64px 31px;
     background-color: #42627b;
-    animation: burgerAnimation 0.4s;
+    transition: all 1s ease-in-out;
+  }
+  .nav__close {
+    animation: burgerAnimationClose 2s;
+  }
+  .nav__open {
+    animation: burgerAnimationOpen 2s;
   }
   .active__nav {
     display: flex !important;
@@ -238,6 +236,7 @@
     row-gap: 30px;
     position: relative;
     z-index: 100;
+    transition: all 3s ease 0s;
   }
   .header__link {
     font-family: "Inter";
@@ -246,6 +245,22 @@
     font-size: 22px;
     line-height: 27px;
     color: #cde1f0;
+  }
+}
+@keyframes burgerAnimationOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes burgerAnimationClose {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 .portfolio__buttons {
@@ -442,7 +457,7 @@
   height: 2px;
   width: 100%;
   background-color: #faf6f2;
-  transition: all 0.4s ease 0s;
+  transition: all 2s ease 0s;
 }
 .burger::before {
   top: 0;
