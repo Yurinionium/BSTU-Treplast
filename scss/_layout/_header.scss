@@ -102,14 +102,12 @@
         overflow: auto;
         padding: 64px 31px;
         background-color: #42627b;
-        transition: all 1s ease-in-out;
-    
-    }
-    .nav__close{
-        animation: burgerAnimationClose 2s
+        transition: all 3s;
+        opacity: 0;
     }
     .nav__open{
-        animation: burgerAnimationOpen 2s
+        // animation: burgerAnimationOpen 2s;
+        opacity: 1;
     }
     .active__nav {
         display: flex !important;

@@ -38,6 +38,7 @@
 .page__button {
     margin: 17px auto 0 auto;
     color: $text-color;
+    transition: 1s all;
     &:hover {
         background-color: #ffd3a0;
         color: #ffffff;
