@@ -1,0 +1,68 @@
+.cover {
+    position: relative;
+    min-height: 683px;
+}
+
+.cover__img {
+    position: absolute;
+    background-image: url(../extends/jpg/fon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #cde1f0;
+}
+
+.cover__title {
+    margin: 227px 0 0 23px;
+    @include font (700, 56px, 68px);
+}
+
+.cover__subtitle {
+    margin: 45px 0 0 23px;
+    @include font (600, 28px, 34px);
+    max-width: 291px;
+}
+@media (max-width: 900px) {
+    .cover {
+        min-height: 506px;
+    }
+
+    .cover__img {
+        background-image: url(../extends/jpg/fonforcover768.jpg);
+    }
+
+    .cover__title {
+        @include font (700, 49px, 59px);
+        margin: 191px 0 0 16px;
+    }
+
+    .cover__subtitle {
+        margin: 27px 0 0 16px;
+        @include font (600, 24px, 29px);
+    }
+}
+@media (max-width: 520px) {
+    .cover {
+        min-height: 213px;
+    }
+
+    .cover__img {
+        background-image: url(../extends/svg/opa.svg);
+    }
+
+    .cover__title {
+        @include font (700, 27px, 33px);
+        margin: 51px 0 0 11px;
+    }
+
+    .cover__subtitle {
+        margin: 8px 0 0 11px;
+        @include font (600, 14px, 17px);
+        max-width: 145px;
+    }
+}

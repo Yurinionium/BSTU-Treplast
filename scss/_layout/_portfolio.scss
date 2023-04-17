@@ -1,0 +1,60 @@
+.portfolio__title {
+    padding: 47px 0 0 0;
+}
+.portfolio__cards {
+    @include flex (space-between, baseline, wrap);    
+    padding: 0 22px;
+    margin: 34px auto 0 auto;
+    gap: 21px 25px;
+    transition: 2s all ease-in;
+}
+.portfolio__img {
+    width: 310px;
+    height: 316px;
+    border-radius: 30px;
+}
+@media (max-width: 1000px) {
+    .portfolio__cards,
+    .price__cards {
+        @include flex (center, baseline, wrap); 
+        padding: 0 59px;
+        gap: 30px;
+    }
+}
+@media (max-width: 900px) {
+    .portfolio__title {
+        padding: 31px 0 0 0;
+    }
+
+    .portfolio__cards {
+        gap: 26px 30px;
+        margin: 49px auto 0 auto;
+    }
+
+    .portfolio__img-hide_6 {
+        overflow: visible;
+    }
+
+    .portfolio__img-hide_5 {
+        overflow: hidden;
+    }
+    .portfolio__card-5,
+    .portfolio__card-6 {
+        display: none;
+    }
+}
+@media (max-width: 520px) {
+    .portfolio__card-2,
+    .portfolio__card-3,
+    .portfolio__card-4 {
+        display: none;
+    }
+    .portfolio__title {
+        padding: 22px 0 0 0;
+    }
+    .portfolio__cards {
+        padding: 0 5px;
+        margin: 29px auto 0 auto;
+        gap: 25px;
+    }
+}
