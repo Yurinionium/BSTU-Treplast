@@ -37,40 +37,40 @@
 
 console.log("56556645464");
 
-const shops = {
-    shop_1: [
-        './extends/jpg/1_1.jpg',
-        './extends/jpg/1_2.jpg',
-        './extends/jpg/1_3.jpg',
-        './extends/jpg/1_4.jpg',
-        './extends/jpg/1_5.jpg',
-        './extends/jpg/1_6.jpg'
-    ],
-    shop_2: [
-        './extends/jpg/2_1.jpg',
-        './extends/jpg/2_2.jpg',
-        './extends/jpg/2_3.jpg',
-        './extends/jpg/2_4.jpg',
-        './extends/jpg/2_5.jpg',
-        './extends/jpg/1_1.jpg'
-    ],
-    shop_3: [
-        './extends/jpg/3_1.jpg',
-        './extends/jpg/3_3.jpg',
-        './extends/jpg/3_4.jpg',
-        './extends/jpg/к3.jpg',
-        './extends/jpg/к6.jpg',
-        './extends/jpg/кк.jpg'
-    ],
-    shop_4: [
-        './extends/jpg/3_3.jpg',
-        './extends/jpg/3_4.jpg',
-        './extends/jpg/1_2.jpg',
-        './extends/jpg/1_3.jpg',
-        './extends/jpg/к6.jpg',
-        './extends/jpg/кк.jpg'
-    ],
-}
+// const shops = {
+//     shop_1: [
+//         './extends/jpg/1_1.jpg',
+//         './extends/jpg/1_2.jpg',
+//         './extends/jpg/1_3.jpg',
+//         './extends/jpg/1_4.jpg',
+//         './extends/jpg/1_5.jpg',
+//         './extends/jpg/1_6.jpg'
+//     ],
+//     shop_2: [
+//         './extends/jpg/2_1.jpg',
+//         './extends/jpg/2_2.jpg',
+//         './extends/jpg/2_3.jpg',
+//         './extends/jpg/2_4.jpg',
+//         './extends/jpg/2_5.jpg',
+//         './extends/jpg/1_1.jpg'
+//     ],
+//     shop_3: [
+//         './extends/jpg/3_1.jpg',
+//         './extends/jpg/3_3.jpg',
+//         './extends/jpg/3_4.jpg',
+//         './extends/jpg/к3.jpg',
+//         './extends/jpg/к6.jpg',
+//         './extends/jpg/кк.jpg'
+//     ],
+//     shop_4: [
+//         './extends/jpg/3_3.jpg',
+//         './extends/jpg/3_4.jpg',
+//         './extends/jpg/1_2.jpg',
+//         './extends/jpg/1_3.jpg',
+//         './extends/jpg/к6.jpg',
+//         './extends/jpg/кк.jpg'
+//     ],
+// }
 
 
 function changeImage(event) {
