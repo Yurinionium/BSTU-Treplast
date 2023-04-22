@@ -74,6 +74,9 @@ const shops = {
 
 
 function changeImage(event) {
+    shop = event.target.dataset.shop;
+    redrawPhoto(imagesCenter);
+
 
     const shop = event.target.dataset.shop;
     const seasonImages = document.querySelectorAll('.portfolio__img');
@@ -98,3 +101,54 @@ function buttonClick(event) {
 
 document.querySelector('.portfolio__buttons').addEventListener('click', buttonClick);
 
+//slider
+function shiftPhoto(arrow) {
+    let w;
+    if (window.innerWidth >= 1024){
+        w = 6;
+    }
+    else if (window.innerWidth >= 768 && window.innerWidth <=1023) {
+        w = 4;
+    }
+    else {
+        w = 1;
+    }
+    if (arrow == 'left') {
+        shops[shop] = shops[shop].slice(w).concat(shops[shop].slice(0, w));
+    } else if (arrow == 'right') {
+        shops[shop] = shops[shop].slice(-w).concat(shops[shop].slice(0, -w));
+    }
+}
+
+const slider = document.querySelector('.slider');
+
+const buttonLeft = document.querySelector('.button_slider_left');
+const buttonRight = document.querySelector('.button_slider_right');
+
+function sliderLeft() {
+    buttonLeft.removeEventListener('click', sliderRight);
+    buttonRight.removeEventListener('click', sliderLeft);
+    slider.classList.add('move_left');
+    shiftPhoto('left');
+    redrawPhoto(imagesRight);
+};
+
+function sliderRight() {
+    buttonLeft.removeEventListener('click', sliderRight);
+    buttonRight.removeEventListener('click', sliderLeft);
+    slider.classList.add('move_right');
+    shiftPhoto('right');
+    redrawPhoto(imagesLeft);
+};
+
+slider.addEventListener('animationend', () => {
+    redrawPhoto(imagesCenter);
+    slider.classList.remove('move_left');
+    slider.classList.remove('move_right');
+    buttonLeft.addEventListener('click', sliderRight);
+    buttonRight.addEventListener('click', sliderLeft);
+});
+
+
+buttonLeft.addEventListener('click', sliderRight);
+buttonRight.addEventListener('click', sliderLeft);
