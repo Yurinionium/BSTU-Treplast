@@ -223,9 +223,6 @@
     transition: all 3s;
     opacity: 0;
   }
-  .nav__close {
-    opacity: 0;
-  }
   .nav__open {
     opacity: 1;
   }
