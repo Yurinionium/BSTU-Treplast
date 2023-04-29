@@ -1209,6 +1209,7 @@
     margin: 29px auto 39px auto;
     gap: 30px;
     padding: 0;
+    justify-content: center;
   }
 }
 @media (max-width: 520px) {
