@@ -490,6 +490,7 @@
   background-color: #f5f5f5;
   border-radius: 30px;
   margin: 0 auto;
+  color: #000;
 }
 
 .calc__menu {
@@ -508,28 +509,33 @@
   font-size: 28px;
   line-height: 34px;
   color: #cde1f0;
+  color: #000;
 }
 
 .calc__title-1 {
   width: 310px;
   padding: 0 0px 0px 2px;
+  color: #000;
 }
 
 .calc__title-2 {
   width: 118px;
   text-align: center;
+  color: #000;
 }
 
 .calc__title-3 {
   width: 206px;
   padding: 0 2px 0 0;
   text-align: center;
+  color: #000;
 }
 
 .calc__title-4 {
   width: 181px;
   padding: 0 4px 0 0;
   text-align: center;
+  color: #000;
 }
 
 @media (max-width: 900px) {
@@ -613,6 +619,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #000;
 }
 
 .container__title {
@@ -621,12 +628,14 @@
   white-space: nowrap;
   overflow: hidden;
   color: #000;
+  color: #000;
 }
 
 .container__price {
   padding: 0 3px 0 0;
   width: 118px;
   text-align: center;
+  color: #000;
 }
 
 .container__inputs {
@@ -660,6 +669,7 @@
   width: 181px;
   text-align: center;
   padding: 0px 5px 2px 0px;
+  color: #000;
 }
 
 .cost {
@@ -673,15 +683,18 @@
   line-height: 34px;
   color: #cde1f0;
   padding: 27px 36px 20px 0;
+  color: #000;
 }
 
 .total-cost {
   padding: 0 0 0 32px;
+  color: #000;
 }
 
 @media (max-width: 900px) {
   .container {
     padding: 8px 15px 0 13px;
+    color: #000;
   }
   .container__title {
     padding: 0 0 0 4px;
@@ -692,6 +705,7 @@
     font-size: 26px;
     line-height: 29px;
     color: #cde1f0;
+    color: #000;
   }
   .container__price {
     padding: 0px 0px 0px 8px;
@@ -702,10 +716,12 @@
     font-size: 26px;
     line-height: 29px;
     color: #cde1f0;
+    color: #000;
   }
   .container__inputs {
     padding: 0px 0px 0 2px;
     width: 159px;
+    color: #000;
   }
   .container__total-price {
     width: 114px;
@@ -717,6 +733,7 @@
     line-height: 29px;
     color: #cde1f0;
     padding: 0 0 0 4px;
+    color: #000;
   }
   .cost {
     font-family: "Inter";
@@ -725,17 +742,21 @@
     font-size: 26px;
     line-height: 29px;
     color: #cde1f0;
+    color: #000;
   }
   .total-cost {
     padding: 0 0 0 27px;
+    color: #000;
   }
   .cost {
     padding: 27px 36px 34px 0;
+    color: #000;
   }
 }
 @media (max-width: 500px) {
   .container {
     padding: 8px 6px 0 4px;
+    color: #000;
   }
   .container__title {
     width: 88px;
@@ -745,6 +766,7 @@
     font-size: 11px;
     line-height: 13px;
     color: #cde1f0;
+    color: #000;
   }
   .container__price {
     padding: 0;
@@ -755,6 +777,7 @@
     line-height: 13px;
     color: #cde1f0;
     width: 34px;
+    color: #000;
   }
   .container__inputs {
     padding: 0;
@@ -765,6 +788,7 @@
     line-height: 13px;
     color: #cde1f0;
     width: 72px;
+    color: #000;
   }
   .container__button {
     width: 20px;
@@ -775,6 +799,7 @@
     font-size: 11px;
     line-height: 13px;
     color: #cde1f0;
+    color: #000;
   }
   .container__input {
     padding: 3px 0;
@@ -785,6 +810,7 @@
     line-height: 13px;
     color: #cde1f0;
     width: 32px;
+    color: #000;
   }
   .container__total-price {
     font-family: "Inter";
@@ -795,6 +821,7 @@
     color: #cde1f0;
     width: 66px;
     padding: 0px 6px 0px 1px;
+    color: #000;
   }
   .cost {
     text-align: right;
@@ -805,9 +832,11 @@
     line-height: 15px;
     color: #cde1f0;
     padding: 17px 12px 17px 0;
+    color: #000;
   }
   .total-cost {
     padding: 0 0 0 14px;
+    color: #000;
   }
 }
 .cover {
