@@ -483,6 +483,8 @@
 }
 .calc {
   margin: 15px auto 30px auto;
+  position: relative;
+  z-index: 2000;
 }
 
 .calc__container {
@@ -555,6 +557,7 @@
     font-size: 20px;
     line-height: 24px;
     color: #cde1f0;
+    color: #000;
   }
   .calc__title-1 {
     width: 271px;
@@ -593,6 +596,7 @@
     font-size: 12px;
     line-height: 15px;
     color: #cde1f0;
+    color: #000;
   }
   .calc__title-1 {
     width: 88px;
