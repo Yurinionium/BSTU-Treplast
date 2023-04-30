@@ -46,7 +46,6 @@ calc.addEventListener('click', (e)=>{
         if(Number(input.value) !== 0){
             calculateSeparateAnswee(e.target.closest('.container'), ACTION.MINUSE);
         }
-        
     }
     if (e.target.classList.contains('container__button-plus')) {
         console.log('Плюс');
