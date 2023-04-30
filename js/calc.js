@@ -18,7 +18,6 @@ function init() {
     elements.forEach((elem) => {
         totalCost += Number(elem.querySelector('.container__input').value) * Number(elem.querySelector('.container__input').dataset.price);
         // totalCost += getElemInput(elem.querySelector('.container__input'));
-        // totalCost += +(getElemInput(elem.querySelector('.container__input')));
     });
     setTotalPrice(totalCost);
 }
