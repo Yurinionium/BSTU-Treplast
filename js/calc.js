@@ -17,8 +17,6 @@ function init() {
     let totalCost = 0;
     elements.forEach((elem) => {
         totalCost += Number(elem.querySelector('.container__input').value) * Number(elem.querySelector('.container__input').dataset.price);
-        // totalCost += getElemInput(elem.querySelector('.container__input'));
-        // totalCost += +(getElemInput(elem.querySelector('.container__input')));
     });
     setTotalPrice(totalCost);
 }
@@ -48,7 +46,6 @@ calc.addEventListener('click', (e)=>{
         if(Number(input.value) !== 0){
             calculateSeparateAnswee(e.target.closest('.container'), ACTION.MINUSE);
         }
-        
     }
     if (e.target.classList.contains('container__button-plus')) {
         console.log('Плюс');
