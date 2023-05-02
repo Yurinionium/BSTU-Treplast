@@ -62,12 +62,14 @@
     <section class="portfolio page__container">
         <h2 class="portfolio__title page__title">Портфолио</h2>
         <div class="portfolio__buttons">
-            <button class="portfolio__button portfolio__button_active">Санта Ритейл</button>
-            <button class="portfolio__button">Корона</button>
-            <button class="portfolio__button">5 Элемент</button>
-            <button class="portfolio__button">KFC</button>
+            <button class="portfolio__button portfolio__button_active" data-shop="shop_1">Санта Ритейл</button>
+            <button class="portfolio__button" data-shop="shop_2">Корона</button>
+            <button class="portfolio__button" data-shop="shop_3">5 Элемент</button>
+            <button class="portfolio__button" data-shop="shop_4">KFC</button>
         </div>
-            <ul class="portfolio__cards">
+        <div class="portfolio__slider">
+        <div class="slider">
+            <ul class="portfolio__cards slider_left">
                 <li class="portfolio__card portfolio__card-1"><img class="portfolio__img portfolio__img-hide_1" src="./extends/jpg/1_1.jpg" alt="картинка"></li>
                 <li class="portfolio__card portfolio__card-2"><img class="portfolio__img portfolio__img-hide_2" src="./extends/jpg/1_1.jpg" alt="картинка"></li>
                 <li class="portfolio__card portfolio__card-3"><img class="portfolio__img portfolio__img-hide_3" src="./extends/jpg/1_2.jpg" alt="картинка"></li>
@@ -75,30 +77,28 @@
                 <li class="portfolio__card portfolio__card-5"><img class="portfolio__img portfolio__img-hide_5" src="./extends/jpg/1_4.jpg" alt="картинка"></li>
                 <li class="portfolio__card portfolio__card-6"><img class="portfolio__img portfolio__img-hide_6" src="./extends/jpg/1_5.jpg" alt="картинка"></li>
             </ul>
-            <!-- <ul class="portfolio__cards">
-                <li class="portfolio__card portfolio__card-1"><img class="portfolio__img portfolio__img-hide_1" src="./extends/jpg/1_6.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-2"><img class="portfolio__img portfolio__img-hide_2" src="./extends/jpg/2.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-3"><img class="portfolio__img portfolio__img-hide_3" src="./extends/jpg/2_1.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-4"><img class="portfolio__img portfolio__img-hide_4" src="./extends/jpg/2_2.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-5"><img class="portfolio__img portfolio__img-hide_5" src="./extends/jpg/2_3.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-6"><img class="portfolio__img portfolio__img-hide_6" src="./extends/jpg/2_4.jpg" alt="картинка"></li>
+            <ul class="portfolio__cards slider_center">
+                <li class="portfolio__card portfolio__card-1"><img class="portfolio__img portfolio__img-hide_1" src="./extends/jpg/1_1.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-2"><img class="portfolio__img portfolio__img-hide_2" src="./extends/jpg/1_1.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-3"><img class="portfolio__img portfolio__img-hide_3" src="./extends/jpg/1_2.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-4"><img class="portfolio__img portfolio__img-hide_4" src="./extends/jpg/1_3.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-5"><img class="portfolio__img portfolio__img-hide_5" src="./extends/jpg/1_4.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-6"><img class="portfolio__img portfolio__img-hide_6" src="./extends/jpg/1_5.jpg" alt="картинка"></li>
             </ul>
-            <ul class="portfolio__cards">
-                <li class="portfolio__card portfolio__card-1"><img class="portfolio__img portfolio__img-hide_1" src="./extends/jpg/2_5.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-2"><img class="portfolio__img portfolio__img-hide_2" src="./extends/jpg/3.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-3"><img class="portfolio__img portfolio__img-hide_3" src="./extends/jpg/3_1.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-4"><img class="portfolio__img portfolio__img-hide_4" src="./extends/jpg/3_3.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-5"><img class="portfolio__img portfolio__img-hide_5" src="./extends/jpg/3_4.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-6"><img class="portfolio__img portfolio__img-hide_6" src="./extends/jpg/к3.jpg" alt="картинка"></li>
+            <ul class="portfolio__cards slider_right">
+                <li class="portfolio__card portfolio__card-1"><img class="portfolio__img portfolio__img-hide_1" src="./extends/jpg/1_1.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-2"><img class="portfolio__img portfolio__img-hide_2" src="./extends/jpg/1_1.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-3"><img class="portfolio__img portfolio__img-hide_3" src="./extends/jpg/1_2.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-4"><img class="portfolio__img portfolio__img-hide_4" src="./extends/jpg/1_3.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-5"><img class="portfolio__img portfolio__img-hide_5" src="./extends/jpg/1_4.jpg" alt="картинка"></li>
+                <li class="portfolio__card portfolio__card-6"><img class="portfolio__img portfolio__img-hide_6" src="./extends/jpg/1_5.jpg" alt="картинка"></li>
             </ul>
-            <ul class="portfolio__cards">
-                <li class="portfolio__card portfolio__card-1"><img class="portfolio__img portfolio__img-hide_1" src="./extends/jpg/к.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-2"><img class="portfolio__img portfolio__img-hide_2" src="./extends/jpg/к3.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-3"><img class="portfolio__img portfolio__img-hide_3" src="./extends/jpg/к6.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-4"><img class="portfolio__img portfolio__img-hide_4" src="./extends/jpg/кк.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-5"><img class="portfolio__img portfolio__img-hide_5" src="./extends/jpg/1_1.jpg" alt="картинка"></li>
-                <li class="portfolio__card portfolio__card-6"><img class="portfolio__img portfolio__img-hide_6" src="./extends/jpg/unnamed.jpg" alt="картинка"></li>
-            </ul> -->
+        </div>
+        <div class="arrows">
+            <img src="./extends/svg/left.svg" alt="" class="button_slider_left">
+            <img src="./extends/svg/right.svg" alt="strelkaLeft" class="button_slider_right">
+        </div>
+    </div>
     </section>
     <section class="video page__container">
         <h2 class="video__title page__title">Видео</h2>
@@ -197,4 +197,5 @@
         </div>
     </footer>
 </body>
+
 </html>
