@@ -222,7 +222,6 @@
     background-color: #42627b;
     transition: all 3s;
     opacity: 0;
-    z-index: -1;
   }
   .nav__open {
     opacity: 1;
