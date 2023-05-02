@@ -374,7 +374,7 @@
   width: 94px;
   height: 82px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   margin: 44px auto 20px auto;
 }
 
@@ -1088,8 +1088,32 @@
     margin: 0 auto;
   }
 }
+.portfolio {
+  position: relative;
+  z-index: 2000;
+}
+
 .portfolio__title {
   padding: 47px 0 0 0;
+}
+
+.portfolio__slider {
+  position: relative;
+  overflow: hidden;
+  height: 691px;
+}
+
+.slider {
+  display: flex;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  transition-duration: 3s;
+}
+
+.strelkaLeft {
+  width: 40px;
+  height: 40px;
 }
 
 .portfolio__cards {
@@ -1181,6 +1205,9 @@
     gap: 26px 30px;
     margin: 49px auto 0 auto;
   }
+  .portfolio__slider {
+    height: 711px;
+  }
   .portfolio__img-hide_6 {
     overflow: visible;
   }
@@ -1193,6 +1220,9 @@
   }
 }
 @media (max-width: 520px) {
+  .portfolio__slider {
+    height: 345px;
+  }
   .portfolio__card-2,
   .portfolio__card-3,
   .portfolio__card-4 {
@@ -1266,6 +1296,7 @@
   }
   .price__cards {
     margin: 29px auto 39px auto;
+    justify-content: center;
     gap: 30px;
     padding: 0;
     justify-content: center;
@@ -1280,6 +1311,7 @@
   }
   .price__cards {
     margin: 18px auto 24px auto;
+    justify-content: center;
     gap: 19px 0;
     padding: 0 5px;
   }
