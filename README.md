@@ -4,4 +4,4 @@
 На сайте пользователь может изучить представленные модели светильников, изучить их характрестики и цены.
 
 Есть визуальная информация в виде картинок.
-https://yurinionium.github.io/BSTU-Treplast/
+https://yurinionium.github.io/BSTUTreplast/
